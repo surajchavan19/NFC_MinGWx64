@@ -1,9 +1,11 @@
 import React from "react";
 import ShopCard from "@/components/ShopCard";
+import Navbar1 from "@/components/Navbar1";
 
 const index = () => {
   return (
     <div className="w-full">
+      <Navbar1 />
       <div className="w-full h-48 bg-slate-400 flex justify-center items-center">
         <span className="text-4xl text-white"> Pitta</span>
       </div>
@@ -23,7 +25,7 @@ const index = () => {
         <div className="w-[70%] flex flex-wrap">
           {[...Array(6)].map((_, i) => {
             return (
-              <div className="w-[300px] h-[450px] m-4">
+              <div className="w-72 h-auto m-4">
                 <ShopCard />
               </div>
             );
